@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>calculator</h1>
+
+    <div class="card">
+      <div class="card-head">
+        <input type="text" id="result" maxlength="20" />
+      </div>
+      <div class="card-body">
+        <div>
+          <input type="button" class="btn" value="c" onclick="clear()" />
+          <input type="button" class="btn" value="+/-" />
+          <input
+            type="button"
+            class="btn"
+            value="%"
+            onclick="insertNumbar('%')"
+          />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="/"
+            onclick="insertNumbar('/')"
+          />
+        </div>
+
+        <div>
+          <input
+            type="button"
+            class="btn"
+            value="7"
+            onclick="insertNumbar(7)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="8"
+            onclick="insertNumbar(8)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="9"
+            onclick="insertNumbar(9)"
+          />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="*"
+            onclick="insertNumbar('*')"
+          />
+        </div>
+        <div>
+          <input
+            type="button"
+            class="btn"
+            value="4"
+            onclick="insertNumbar(4)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="5"
+            onclick="insertNumbar(5)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="6"
+            onclick="insertNumbar(6)"
+          />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="-"
+            onclick="insertNumbar('-')"
+          />
+        </div>
+        <div>
+          <input
+            type="button"
+            class="btn"
+            value="1"
+            onclick="insertNumbar(1)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="2"
+            onclick="insertNumbar(2)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="3"
+            onclick="insertNumbar(3)"
+          />
+          <input
+            type="button"
+            class="btn btn-style"
+            value="+"
+            onclick="insertNumbar('+')"
+          />
+        </div>
+        <div>
+          <input
+            type="button"
+            class="btn"
+            value="0"
+            onclick="insertNumbar(0)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="."
+            onclick="insertNumbar('.')"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="Del"
+            onclick="deleteNumbar()"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="="
+            style="background-color: yellow"
+            onclick="calculate()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
